@@ -18,6 +18,7 @@ from django.urls import path
 from jobsApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index),
     path('lhrjobs/', views.lhrjobsinfo),
     path('krachijobs/', views.krachijobsinfo),
     path('isljobs/', views.isljobsinfo),
